@@ -154,7 +154,7 @@ function removeObjectByName( objectname ) {
 function loadMale() {
 		
 	var loader = new THREE.PLYLoader();
-	loader.load( './MaleFemale_burn/A2WDB-male-MeanSurf_wNormals.ply', function ( male_geometry ) {
+	loader.load( './MaleFemale_burn/male2.ply', function ( male_geometry ) {
 		//geometry.computeFaceNormals();
 		male_geometry.computeVertexNormals();
 							
@@ -179,7 +179,7 @@ function loadMale() {
 function loadFemale() {
 	
 	var loader = new THREE.PLYLoader();
-	loader.load( './MaleFemale_burn/a2wbd-female-MeanSurf_wNormals_hairfix.ply', function ( female_geometry ) {
+	loader.load( './MaleFemale_burn/female2.ply', function ( female_geometry ) {
 
 		//geometry.computeFaceNormals();
 		female_geometry.computeVertexNormals();
