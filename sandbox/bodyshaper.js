@@ -47,7 +47,7 @@ var shapeParams = {
 	};
 	
 var genderParams = { 
-	Sex: 'ANSURII_male'
+	Sex: 'A_male'
 	};
 	
 var basicmaterial = new THREE.MeshBasicMaterial( { 
@@ -159,7 +159,7 @@ function loadMale() {
 		male_geometry.computeVertexNormals();
 							
 		male_mesh = new THREE.Mesh( male_geometry, materials[0] );
-		male_mesh.name = "ANSURII_male";
+		male_mesh.name = "A_male";
 		male_mesh.rotation.x = - Math.PI / 2;
 		male_mesh.scale.multiplyScalar( 0.001 ); // scale to mm
 
@@ -185,7 +185,7 @@ function loadFemale() {
 		female_geometry.computeVertexNormals();
 
 		female_mesh = new THREE.Mesh( female_geometry, materials[0] );
-		female_mesh.name = "ANSURII_female";
+		female_mesh.name = "A_female";
 		female_mesh.rotation.x = - Math.PI / 2;
 		female_mesh.scale.multiplyScalar( 0.001 ); // scale to mm
 
@@ -211,7 +211,7 @@ function setupGenderGUI() {
 
 	var GenderGUI = gui.addFolder( "Gender" );
 
-	GenderGUI.add( genderParams, 'Sex', { 'Male': 'ANSURII_male', 'Female': 'ANSURII_female' } ).onChange( switchSex );
+	GenderGUI.add( genderParams, 'Sex', { 'Male': 'A_male', 'Female': 'A_female' } ).onChange( switchSex );
 	
 	GenderGUI.open();
 }
@@ -269,15 +269,15 @@ function changeSkinColor() {
 }
 
 function switchSex() {
-	if( genderParams.Sex == 'ANSURII_male' ) {
+	if( genderParams.Sex == 'A_male' ) {
 	
-		removeObjectByName( 'ANSURII_female' );
+		removeObjectByName( 'A_female' );
 		loadMale();	
 	
 	}	
-	else if( genderParams.Sex == 'ANSURII_female' ) {
+	else if( genderParams.Sex == 'A_female' ) {
 	
-		removeObjectByName( 'ANSURII_male' );
+		removeObjectByName( 'A_male' );
 		loadFemale();					
 	}
 }
