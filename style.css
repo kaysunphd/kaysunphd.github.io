@@ -19,6 +19,11 @@ body {
     margin: 0;
 }
 
+@media (min-width: 700px)
+.site-header {
+    text-align: center;
+}
+
 .container-narrow {
 	margin-left: auto;
 	margin-right: auto;
@@ -45,8 +50,8 @@ body {
 	border-bottom-style: solid;
 	border-bottom-color: #1a1b23;
 	-webkit-font-smoothing: antialiased; 
-	padding-left: 120px;
-	padding-right: 120px;
+	padding-left: 12px;
+	padding-right: 12px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 }
