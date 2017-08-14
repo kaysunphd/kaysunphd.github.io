@@ -250,6 +250,20 @@ body {
  	padding-right: 0px;
  }
 
+.img-doing {
+ 	max-width: 40%;
+ 	padding-left: 0px;
+ 	padding-right: 0px;
+ 	padding-bottom: 10px;
+ }
+
+.img-doing-bigger {
+ 	max-width: 55%;
+ 	padding-left: 0px;
+ 	padding-right: 0px;
+ 	padding-bottom: 10px;
+ }
+
 .img-partner {
  	max-width: 100%;
  	display: block;
