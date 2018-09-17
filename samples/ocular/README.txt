@@ -5,7 +5,7 @@ CFD Research Corporation was awarded the FDA funding opportunity titled “Physi
 
 The software tool was created using C++ and open source libraries, Qt and Openscenegraph, and the linked CFD solver, CoBi, is from CFD Research Coporation.
 
-Corresponding CXX and H
+Corresponding CPP and H
 ------------------------
 This is a sample of one class in the ocular drug delivery software tool.
 
