@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>	
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--link rel="icon" type="image/png" href="images/logo_favicon-16x16.png"-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Lato|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>examgroup</title>
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_small.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="site-header-nav">
+				<a class="site-header-nav-item" href="index.html#what-we-created">Apps</a>
+				<a class="site-header-nav-item" href="news.html">News</a>
+				<a class="site-header-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="jumbotron-apps examgroup-shade text-center">
+		<div class="container">
+			<div class="row">
+				<img class="home-illu" src="images/heading_examgroup_transparent.png" alt="examgroup">
+			</div>
+		</div>
+	</div>
+
+	<section class="page-section page-section-spacious">
+		<div class="container-narrow">
+			<div class="row mt-6">
+				<div class="col-xs-12 col-sm-3">
+					<h1 class="text-center">Motivation</h1>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<p class="lead">
+						Magnetic resonance (MR) images are often used for image interpretation, registration, segmentation, lesion tracking, and more. These processes require the human anatomical regions of the scans (head, breast, abdomen, knee, etc.) to be known in order to apply the appropriate and relevant algorithm, segmentation atlas, previous scans and segmented lesions. However, the basic information about the anatomical regions of these scans, or exam group, stored in the DICOM meta data are sometimes missing, mistyped or unique to the institution. A more robust approach is to use the image data of the scan to identify the exam group and apply a standard naming convention. 
+					</p>
+				</div>
+			</div>
+			<div class="row mt-6">
+				<div class="col-xs-12 col-sm-3">
+					<h1 class="text-center">Solution</h1>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<p class="lead">
+						As exam group identification is essentially image classification, supervised learning and convolution neural networks (CNN) techniques are used. MR scans are grouped into four MR exam groups, MR_Head, MR_Breast, MR_Abdomen and MR_Other. MR_Other consists of any MR that do not belong to the other 3 groups, such as neck, shoulder, spine, knee, etc. For each of the 4 MR exam groups, maximum intensity projection (MIP) images along the superior-inferior axis are created to simplify the 3D MR image volumes. These projected 2D images serve as the input data used for deep learning training. 
+					</p>
+					<br>	
+
+					<img class="home-illu" src="images/simpleclassify.png" alt="CNN-classify">
+					<p class="labelthin"> Convolutional neural network for exam group classification of MR images </p>	
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section page-section-spacious">
+		<div class="container-narrow">		
+
+			<div class="row mt-6">
+				<p class="lead text-center">
+					<a href="contact.html">Contact us</a>
+					for more information.
+				</p>
+			</div>
+		</div>
+
+	</section>
+
+
+	<div class="jumbotron-apps examgroup-shade text-center">
+		<div class="container">
+			<div class="row">
+				<!--
+				<img class="home-illu" src="images/rivus_summary_transparent.png" alt="Rivus-Summary">
+				-->
+			</div>
+		</div>
+	</div>
+
+	<foot class="footer">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_smaller.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="footer-nav">
+				<a class="footer-nav-item" href="index.html#what-we-created">Apps</a>
+				<a class="footer-nav-item" href="news.html">News</a>
+				<a class="footer-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</foot>
+
+</body>
+
+</html>

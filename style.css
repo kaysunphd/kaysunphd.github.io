@@ -233,6 +233,14 @@ body {
 	margin-bottom: 48px;
 }
 
+.blue-text {
+    color: #0000ff;
+}
+
+.yellow-text {
+    color: #9a9a00;
+}
+
 .row {
     margin-left: -15px;
     margin-right: -15px;
@@ -339,6 +347,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .praseus-shade {
     min-height: 0;
     background: #360606;
+}
+
+.segment-shade {
+    min-height: 0;
+    background: #4e4e4e;
+}
+
+.examgroup-shade {
+    min-height: 0;
+    background: #000000;
 }
 
 .contact-shade {

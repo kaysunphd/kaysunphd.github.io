@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>	
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--link rel="icon" type="image/png" href="images/logo_favicon-16x16.png"-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Lato|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>segment</title>
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_small.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="site-header-nav">
+				<a class="site-header-nav-item" href="index.html#what-we-created">Apps</a>
+				<a class="site-header-nav-item" href="news.html">News</a>
+				<a class="site-header-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="jumbotron-apps segment-shade text-center">
+		<div class="container">
+			<div class="row">
+				<img class="home-illu" src="images/heading_segment_transparent.png" alt="Segment">
+			</div>
+		</div>
+	</div>
+
+	<section class="page-section page-section-spacious">
+		<div class="container-narrow">
+			<div class="row mt-6">
+				<h1 class="text-left">Motivation</h1>
+			</div>
+			<div class="row">
+				<p class="lead">
+					Segmented liver organs from computed tomography (CT) scans are critical for radiation therapy planning, image-guided surgery, hepatic disease diagnois and functionality assessment. Manual delineation of the liver from hundreds of CT slices per scan is labor and time consuming. Traditional computer vision and image processing methods are not robust given the variations in image quality of CT (spatial resolutions, signal-to-noise ratio) and human anatomy, and can take a significant amount of time (in minutes) and sometimes require user interactive to provide additional input.
+				</p>
+
+				<br>
+				<p class="lead">
+					A deep learning model taught to learn from the variations in CT image quality and human anatomy by training on a large dataset size. The segmentation predictions are also fully automated, fast (in seconds) and require no user intervention.
+				</p>
+
+			</div>
+
+			<div class="row mt-6">
+				<h1 class="text-left">Solution</h1>
+			</div>
+
+			<div class="row">
+				<p class="lead">
+					A 3D U-Net based deep learning model was developed using supervised machine learning and trained with segmented liver organs from CTs from the <a href="https://competitions.codalab.org/competitions/1709"> Liver Tumor Segmentation Challenge (LiTS) </a>.
+					A different and unseen dataset from <a href="https://www.ircad.fr/research/3dircadb/"> 3Dircadb </a> was used for independent validation. High dice and Hausdorff 95 scores were observed for the predicted liver segmentations.
+				</p>
+				<br>
+			</div>
+
+			<div class="row">
+				<p class="lead labelbold text-center">
+					Segmented liver organ from abdominal CT scan predicted using deep learning
+				</p>
+				<br>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<img class="home-illu" src="images/liver_segment.gif" alt="liver-segment">
+					<h5 class="text-center blue-text">Blue indicate overpredictions</h5>
+					<h5 class="text-center yellow-text">Yellow indicate underpredictions</h5>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<img class="home-illu" src="images/dice_score_liver_segment.PNG" alt="dice-score-liver-segment">
+				</div>
+			</div>
+
+			<div class="row mt-6">
+				<p class="lead text-center">
+					<a href="contact.html">Contact us</a>
+					for more information.
+				</p>
+			</div>
+
+		</div>
+	</section>
+
+
+	<div class="jumbotron-apps segment-shade text-center">
+		<div class="container">
+			<div class="row">
+				<!--
+				<img class="home-illu" src="images/rivus_summary_transparent.png" alt="Rivus-Summary">
+				-->
+			</div>
+		</div>
+	</div>
+
+	<foot class="footer">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_smaller.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="footer-nav">
+				<a class="footer-nav-item" href="index.html#what-we-created">Apps</a>
+				<a class="footer-nav-item" href="news.html">News</a>
+				<a class="footer-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</foot>
+
+</body>
+
+</html>
