@@ -14,5 +14,16 @@ python DicomAnonymizer.py "C:\Dicom"
 if hash
 python DicomAnonymizer.py "C:\Dicom" 123abc
 
+DICOM file structure:
+DICOM path
+    |---- patientID
+              |---- *.DCM
+              |---- *.DCM
+              ...
+    |---- patientID
+              |---- *.DCM
+              |---- *.DCM
+              ...
+              
 Modify:
 change the list of dicom tags in DICOM_tags.txt
