@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>	
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--link rel="icon" type="image/png" href="images/logo_favicon-16x16.png"-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Lato|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>dose</title>
+</head>
+<body>
+	<header class="site-header dose-shade">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_small.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="site-header-nav">
+				<a class="site-header-nav-item" href="index.html#what-we-created">Apps</a>
+				<a class="site-header-nav-item" href="news.html">News</a>
+				<a class="site-header-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="jumbotron-apps dose-shade text-center">
+		<div class="container">
+			<div class="row">
+				<img class="home-illu" src="images/heading_dose_transparent.png" alt="Dose">
+			</div>
+		</div>
+	</div>
+
+	<section class="page-section page-section-spacious">
+		<div class="container-narrow">
+			<div class="row mt-6">
+				<h1 class="text-left">Motivation</h1>
+			</div>
+			<div class="row">
+				<p class="lead">
+					A typical radiation therapy planning can take many days due to the time consuming iterative process to satisfy all the objectives of the treatment goals, i.e. sufficient radiation delivered to the tumor while sparing the surrounding tissues, particularly the sensitive organs at risk. The process involves acquiring the CT images, from which the tumor and surrounding organs are delineated to mark their boundaries and volumes. The radiation beams and dosages to each segmentation are then prescribed as desired goals. Using a specialized treatment planning software, inverse optimization is performed determine the ideal beam settings (number, angles, radiation) needed to met the objectives of the therapy dosages. This optimization computation can take some time and if there are any changes to the goals or if the goals cannot be achieved, then tweaks have to be manually made. So it can become time consuming and relies on the experience of the dosimetrists and medical physicists. Finally, the plan has to be reviewed and approved. If there’s any unwanted risks to the surrounding organs that can potentially cause complications, the plan has to be re-done. Once approved, quality assurance (QA) checks the plan again before delivering treatment to the patient.
+				</p>
+
+				<br>
+				<p class="lead">
+					With deep learning, the iterative part of the planning process can be minimized by predicting a clinically deliverable dose distributions based on historic plans that will provide clinically feasible goals to target for in optimization and also provide a better initial guess for the optimization. As such, the entire planning process can be reduced to 1 to 2 days.
+				</p>
+
+			</div>
+
+			<div class="row mt-6">
+				<h1 class="text-left">Solution</h1>
+			</div>
+
+			<div class="row">
+				<p class="lead">
+					A modified 3D U-Net based deep learning model was developed using supervised machine learning and trained with segmented head CTs from the <a href="https://competitions.codalab.org/competitions/23428"> OpenKBP - 2020 AAPM Grand Challenge </a>. Relatively low errors in the predicted 3D radiation dose distributions were observed.
+				</p>
+				<br>
+			</div>
+
+			<div class="row">
+				<p class="lead labelbold text-center">
+					Radiation dose distribution predicted using deep learning
+				</p>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<h5 class="text-center black-text">Truth</h5>
+					<img class="home-illu" src="images/dose_truth.gif" alt="dose_truth">
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<h5 class="text-center black-text">Prediction</h5>
+					<img class="home-illu" src="images/dose_prediction.gif" alt="dose_prediction">
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<h5 class="text-center black-text">Difference</h5>
+					<img class="home-illu" src="images/dose_difference.gif" alt="dose_difference">
+					<p class="text-center black-text">Scale range from <mark class="blue-text">underpredictions (blue)</mark> to <mark class="red-text">overpredictions (red)</mark></p>
+				</div>
+				<table style="margin: 0 auto; text-align:center">
+					<tr>
+					  	<td>Mean difference </td>
+					   	<td>   +2.42 Gy</td>
+					</tr>
+					<tr>
+					    <td>Median difference </td>
+					    <td>   -0.286 Gy</td>
+					</tr>
+					<tr>
+					    <td>95th percentile overprediction</td>
+					    <td>   +4.77 Gy</td>
+					</tr>
+					<tr>
+					    <td>95th percentile underprediction</td>
+					    <td>   -8.02 Gy</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="row mt-6">
+				<p class="lead text-center">
+					<a href="contact.html">Contact us</a>
+					for more information.
+				</p>
+			</div>
+
+		</div>
+	</section>
+
+
+	<div class="jumbotron-apps dose-shade text-center">
+		<div class="container">
+			<div class="row">
+				<!--
+				<img class="home-illu" src="images/rivus_summary_transparent.png" alt="Rivus-Summary">
+				-->
+			</div>
+		</div>
+	</div>
+
+	<foot class="footer">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_smaller.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="footer-nav">
+				<a class="footer-nav-item" href="index.html#what-we-created">Apps</a>
+				<a class="footer-nav-item" href="news.html">News</a>
+				<a class="footer-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</foot>
+
+</body>
+
+</html>

@@ -32,7 +32,7 @@ body {
 	max-width: 800px;
 }
 
-.container, .container-narrow {
+.container {
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -45,10 +45,10 @@ body {
 
 .site-header {
 	color: #74b1be;
-	background-color: #2f3241;
+	background-color: #2b2e3b;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	border-bottom-color: #1a1b23;
+	border-bottom-color: #2b2e3b;
 	-webkit-font-smoothing: antialiased; 
 	padding-left: 12px;
 	padding-right: 12px;
@@ -233,12 +233,20 @@ body {
 	margin-bottom: 48px;
 }
 
+.black-text {
+    color: #000000;
+}
+
 .blue-text {
     color: #0000ff;
 }
 
 .yellow-text {
     color: #9a9a00;
+}
+
+.red-text {
+    color: #FF0000;
 }
 
 .row {
@@ -341,26 +349,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .ocellus-shade {
     min-height: 0;
+    border: 1px solid #f7ecb5;
     background: #f7ecb5;
 }
 
 .praseus-shade {
     min-height: 0;
+    border: 1px solid #360606;
     background: #360606;
 }
 
 .segment-shade {
     min-height: 0;
+    border: 1px solid #4e4e4e;
     background: #4e4e4e;
 }
 
 .examgroup-shade {
     min-height: 0;
+    border: 1px solid #000000;
     background: #000000;
+}
+
+.dose-shade {
+    min-height: 0;
+    border: 1px solid #222A35;
+    background: #222A35;
 }
 
 .contact-shade {
     min-height: 0;
+    border: 1px solid #C8EBFF;
     background: #C8EBFF;
 }
 
