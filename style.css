@@ -16,7 +16,6 @@ body {
 	background-color: #fff;
     line-height: 1.5;
     color: #3a585f;
-    margin: 0;
 }
 
 @media (min-width: 700px)
@@ -387,6 +386,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     min-height: 0;
     border: 1px solid #fafafa;
     background: #fafafa;
+}
+
+.deidentify-shade {
+    min-height: 0;
+    border: 1px solid #1F2F13;
+    background: #1F2F13;
 }
 
 .footer {

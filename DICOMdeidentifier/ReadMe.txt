@@ -5,14 +5,14 @@ Install:
 pip install pydicom
 
 How-To-Use:
-python DicomAnonymizer.py {path to DICOMs} {optional: secret key password if hashing patient ID}
+python DicomDeidentifier.py {path to DICOMs} {optional: secret key password if hashing patient ID}
 
 Example:
 if no hash
-python DicomAnonymizer.py "C:\Dicom"
+python DicomDeidentifier.py "C:\Dicom"
 
 if hash
-python DicomAnonymizer.py "C:\Dicom" 123abc
+python DicomDeidentifier.py "C:\Dicom" 123abc
 
 DICOM file structure:
 DICOM path

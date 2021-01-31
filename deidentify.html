@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>	
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Lato|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>deidentify</title>
+</head>
+<body>
+	<header class="site-header deidentify-shade">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_small.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="site-header-nav">
+				<a class="site-header-nav-item" href="index.html#what-we-created">Apps</a>
+				<a class="site-header-nav-item" href="news.html">News</a>
+				<a class="site-header-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="jumbotron-apps deidentify-shade text-center">
+		<div class="container">
+			<div class="row">
+				<img class="home-illu" src="images/heading_deidentify_transparent.png" alt="Deidentify">
+			</div>
+		</div>
+	</div>
+
+	<section class="page-section page-section-spacious">
+		<div class="container-narrow">
+			<div class="row mt-6">
+				<div class="col-xs-12 col-sm-3">
+					<h1 class="text-center">Motivation</h1>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<p class="lead">
+						General Data Protection Regulation (GDPR) is the privacy regulations set forth by the European Union (EU) for the collection, storage and transmission of personal data of EU citizens and residents. The law broadly expands the definition of personal data beyond personal health information (PHI), which can be used to directly identify an individual, to also include sensitive personal data, such as race, religion, politicali party, and sexual orientation, and other identifiers that in combination can be used  for indirect identification by inference. Within the United States, the Health Insurance Portability and Accountability Act (HIPAA) limits privacy to just PHI.
+					</p>
+					<br>
+					<p class="lead">
+						Learn more about GDPR and HIPAA <a href="https://www.fairwarning.com/insights/health-it-director/gdpr-and-hipaa-compliance-what-are-the-differences-and-how-can-i-work-towards-compliance" target=_blank>here </a>
+					</p>
+					<br>
+					<p class="lead">
+						Digital Imaging and Communications in Medicine (DICOM) is the standard to store, exchange and transmit medical images (CT, MR, US, x-ray, etc.) and contains a wealth of personal information collected and stored to ensure minimum risk of patient mix-up. As important as matching medical data to patients is, personal data must be protected and handling of medical data must be compliant to all privacy laws. DICOM images used for research, with the consent of patients, must be de-identified by removing all potential personal data before use.  
+					</p>
+				</div>
+			</div>
+			<div class="row mt-6">
+				<div class="col-xs-12 col-sm-3">
+					<h1 class="text-center">How to Use</h1>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<p class="lead">
+						The DICOM de-identification is performed with a Python script that will remove values of specific DICOM tags listed in DICOM_tags.txt. This list is simply a text file which can be easily modified by adding more tags or deleting existing ones. De-identified DICOM images will be created in a new directory call 'dicom_deided'.
+					</p>
+					<br>
+					<p class="lead">
+						Requirements - Python, Pydicom
+					</p>
+					<br>
+					<p class="lead">
+						Install Pydicom with
+					</p>
+					<p>		
+						<code>
+							pip install pydicom
+						</code>
+					</p>
+					<br>
+					<p class="lead">
+						Execute with
+					</p>
+					<p>
+						<code>
+							python DicomDeidentifier.py {path to DICOMs} {optional: secret key password if hashing patient ID}
+						</code>
+					</p>
+					<br>
+					<p class="lead">
+						Example
+					</p>
+					<p>		
+						<code>
+							python DicomDeidentifier.py "C:\Dicom"
+						</code>
+					</p>
+					<br>		
+				</div>
+			</div>
+
+			<div class="row mt-6">
+				<p class="lead text-center">
+					<a href="DICOMdeidentifier.zip" download>Download</a> the free DICOM de-identifier.
+				</p>
+			</div>
+
+		</div>
+	</section>
+
+
+	<div class="jumbotron-apps deidentify-shade text-center">
+		<div class="container">
+			<div class="row">
+			</div>
+		</div>
+	</div>
+
+	<foot class="footer">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_smaller.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="footer-nav">
+				<a class="footer-nav-item" href="index.html#what-we-created">Apps</a>
+				<a class="footer-nav-item" href="news.html">News</a>
+				<a class="footer-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</foot>
+
+</body>
+
+</html>
