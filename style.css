@@ -19,9 +19,9 @@ body {
 }
 
 @media (min-width: 700px) {
-    .site-header {
+    /* .site-header {
         text-align: center;
-    }
+    } */
 }
 
 .container-narrow {
