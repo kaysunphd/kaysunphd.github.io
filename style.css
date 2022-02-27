@@ -18,11 +18,11 @@ body {
     color: #3a585f;
 }
 
-@media (min-width: 700px) {
-    /* .site-header {
+/* @media (min-width: 700px) {
+    .site-header {
         text-align: center;
-    } */
-}
+    }
+} */
 
 .container-narrow {
 	margin-left: auto;
@@ -92,8 +92,6 @@ body {
 }
 
 .jumbotron {
-    color: #74b1be;
-    background-color: #2b2e3b;
     padding-top: 36px;
     padding-bottom: 36px;
     -webkit-font-smoothing: antialiased;
@@ -102,8 +100,6 @@ body {
 }
 
 .jumbotron-apps {
-    color: #74b1be;
-    background-color: #2b2e3b;
     padding-top: 12px;
     padding-bottom: 0px;
     -webkit-font-smoothing: antialiased;
@@ -112,8 +108,6 @@ body {
 }
 
 .jumbotron-contact {
-    color: #74b1be;
-    background-color: #2b2e3b;
     padding-top: 0px;
     padding-bottom: 0px;
     -webkit-font-smoothing: antialiased;
@@ -339,6 +333,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     min-height: 0;
     border: 1px solid #b8c6c9;
     background: #b8c6c9;
+}
+
+.jumbotron-shade {
+    color: #74b1be;
+    background-color: #2b2e3b;
 }
 
 .rivus-shade {
