@@ -18,9 +18,10 @@ body {
     color: #3a585f;
 }
 
-@media (min-width: 700px)
-.site-header {
-    text-align: center;
+@media (min-width: 700px) {
+    .site-header {
+        text-align: center;
+    }
 }
 
 .container-narrow {
