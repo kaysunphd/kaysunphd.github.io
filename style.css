@@ -364,6 +364,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background: #4e4e4e;
 }
 
+.nerve-shade {
+    min-height: 0;
+    border: 1px solid #000004;
+    background: #000004;
+}
+
 .examgroup-shade {
     min-height: 0;
     border: 1px solid #000000;
@@ -374,6 +380,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     min-height: 0;
     border: 1px solid #222A35;
     background: #222A35;
+}
+
+.predictive-shade {
+    min-height: 0;
+    border: 1px solid #f5df72;
+    background: #f5df72;
 }
 
 .contact-shade {

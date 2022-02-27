@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>	
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--link rel="icon" type="image/png" href="images/logo_favicon-16x16.png"-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Lato|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>nerve</title>
+</head>
+<body>
+	<header class="site-header nerve-shade">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_small.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="site-header-nav">
+				<a class="site-header-nav-item" href="index.html#what-we-created">Apps</a>
+				<a class="site-header-nav-item" href="news.html">News</a>
+				<a class="site-header-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="jumbotron-apps nerve-shade text-center">
+		<div class="container">
+			<img class="home-illu" src="images/heading_nerve_transparent.png" alt="nerve">
+		</div>
+	</div>
+
+	<section class="page-section page-section-spacious">
+		<div class="container-narrow">
+			<div class="row mt-6">
+				<div class="col-xs-12 col-sm-3">
+					<h1 class="text-center">Motivation</h1>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<p class="lead">
+						One alternative to prescription narcotics for postoperative pain management is with a targeted pain relief system that automatically delivers a controlled amount of local anesthetic to the surgical site or in close proximity to nearby nerves, for up to 5 days, using specially designed indwelling catheters. 
+						This targeted pain management system with non-narcotics serves to reduce the dependence on additive opiods and can accelerate patient recovery. 
+						It is often used after orthopaedic repairs and even Cesarean sections for childbirth.
+					</p>
+					<br>
+					<p class="lead">
+						In order for this pain relief system to be effective, the anesthetic delivering catheters must be critically positioned near pain signal transmitting nerves, requiring ultrasound guidance for insertion. 
+						Despite the high safety and effectiveness of using sound waves to visualize internal tissues as well as the portability and accessibility of ultrasounds even in smaller clinics, it is a challenging medical imaging tool to master, often requiring years of specialized training to learn the unintuitive coordination between the almost abstract ultrasound images and the placement of the transducer (angle, pressure, motion). 
+						Deep learning models can be trained to aid in more accurately identifying nerves in ultrasound images for proper catheter placement by making realtime inference with the moving ultrasound images and overlaying the predicted segmentations for immediate feedback to the users.
+					</p>
+				</div>
+			</div>
+			<div class="row mt-6">
+				<div class="col-xs-12 col-sm-3">
+					<h1 class="text-center">Solution</h1>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<p class="lead">
+						A modified and highly tuned 3D U-Net based deep learning model was trained with ultrasound images from <a href="https://www.kaggle.com/c/ultrasound-nerve-segmentation/overview"> Kaggle's Ultrasound Nerve Segment Competition</a>.
+						Dice coefficient of 0.69 between the predicted and truth segmentations (provided from Kaggle competition) were observed. 
+						The top 5 scores from the competition were in the 0.72 to 0.73 range as these models employed multiple deep learning models in ensemble to achieve the higher Dice scores but will require longer inference time.
+					</p>
+					<br>
+					<p class="lead">
+						Additionally, the ultrasound dataset are of poor quality, with problems including too few images for deep 3D U-Net architectures, many of which are duplicates, and questionable segmentation of truth images.
+					</p>
+					<br>
+
+					<div class="col-xs-6">
+						<img class="home-illu" src="images/nerve-segment-A.gif" alt="nerve-segment-A">
+					</div>
+					<div class="col-xs-6">
+						<img class="home-illu" src="images/nerve-segment-B.gif" alt="nerve-segment-B">
+					</div>
+					<p class="labelthin"> Contours of nerves (<span class="red-text">in red</span>) from ultrasound images predicted using deep learning.</p>	
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section page-section-spacious">
+		<div class="container-narrow">		
+
+			<div class="row mt-6">
+				<p class="lead text-center">
+					<a href="contact.html">Contact us</a>
+					for more information.
+				</p>
+			</div>
+		</div>
+
+	</section>
+
+
+	<div class="jumbotron-apps nerve-shade text-center">
+		<div class="container">
+			<div class="row">
+				<!--
+				<img class="home-illu" src="images/rivus_summary_transparent.png" alt="Rivus-Summary">
+				-->
+			</div>
+		</div>
+	</div>
+
+	<foot class="footer">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_smaller.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="footer-nav">
+				<a class="footer-nav-item" href="index.html#what-we-created">Apps</a>
+				<a class="footer-nav-item" href="news.html">News</a>
+				<a class="footer-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</foot>
+
+</body>
+
+</html>
