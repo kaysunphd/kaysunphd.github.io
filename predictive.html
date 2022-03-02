@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>	
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--link rel="icon" type="image/png" href="images/logo_favicon-16x16.png"-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Lato|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>predictive</title>
+</head>
+<body>
+	<header class="site-header predictive-shade">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_small.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="site-header-nav">
+				<a class="site-header-nav-item" href="index.html#what-we-created">Solutions</a>
+				<a class="site-header-nav-item" href="news.html">News</a>
+				<a class="site-header-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="jumbotron-apps predictive-shade text-center">
+		<div class="container">
+			<img class="home-illu" src="images/heading_predictive_transparent.png" alt="Predictive">
+		</div>
+	</div>
+
+	<section class="page-section page-section-spacious">
+		<div class="container-narrow">
+			<div class="row mt-6">
+				<h1 class="text-left">Motivation</h1>
+			</div>
+			<div class="row">
+				<p class="lead">
+					Data science applied to healthcare can have substantial impact on patient outcome. 
+					Data analytics performed on historical healthcare data can identify high risk patients, offer personalized outcome predictions to aid in clinical decision-making during therapy enrollment and long-term follow-ups, select more optimum treatments and customize its parameters for best patient outcome, and more.
+					Personalizing medicine by demographics, comoborities, severity and a multitude of other factors is finally achievable with advances in data science methodologies and digitalization of healthcare data. 
+				</p>
+
+				<br>
+				<p class="lead">
+					Previously siloed structured and unstructured healthcare data, including medical records, doctor notes, medical images, omics data, device data, patient reported outcomes(pain scores, side effects, etc.), are slowly becoming more available. 
+					Common data science modeling approaches, e.g. support vector machine, decision tree, random forest, Naive Bayes, neural networks, etc., can now be applied on the available healthcare data depending on the desired prediction outcome.
+				</p>
+				<br>
+				<img class="home-illu" src="images/ML-DS-approaches.png" alt="ml-ds-approaches">
+			</div>
+
+			<div class="row mt-6">
+				<h1 class="text-left">Solution</h1>
+			</div>
+
+			<div class="row">
+				<p class="lead">
+					For one application, the risk of patient experienced toxicity after radiation therapy (RT) to treat cancer can be predicted from the delivered radiation dose to the surrounding organs of the tumor. 
+					The 3D dose distribution to each organ is represented by the dose-volume histogram (DVH) calculated from DICOM RT Dose and RT Structure acquired during therapy. 
+					An open source machine learning library (scikit-learn) was used to train the DVH RT data on a SVM model with recursive feature elimination and cross validation to produce a model of accuracy 79% to predict generic toxicity. 
+					This model can be used to fine tune the radiation therapy plan as an addition objective in the planning calculus to reduce risk of toxicity prior to treatment and also to preemptively prescribe medication to counter toxicity to try to offset symptoms after treatment.
+				</p>
+				<!-- <br>
+				<p class="lead">
+				</p> -->
+			</div>
+
+			<div class="row mt-6">
+				<p class="lead text-center">
+					<a href="contact.html">Contact us</a>
+					for more information.
+				</p>
+			</div>
+
+		</div>
+	</section>
+
+
+	<div class="jumbotron-apps predictive-shade text-center">
+		<div class="container">
+			<div class="row">
+				<!--
+				<img class="home-illu" src="images/rivus_summary_transparent.png" alt="Rivus-Summary">
+				-->
+			</div>
+		</div>
+	</div>
+
+	<foot class="footer">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_smaller.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="footer-nav">
+				<a class="footer-nav-item" href="index.html#what-we-created">Solutions</a>
+				<a class="footer-nav-item" href="news.html">News</a>
+				<a class="footer-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</foot>
+
+</body>
+
+</html>
