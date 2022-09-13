@@ -65,9 +65,25 @@
 					An open source machine learning library <a href="https://scikit-learn.org/stable/"> scikit-learn</a> was used to train the DVH RT data on a SVM model with recursive feature elimination and cross validation to produce a model of accuracy 79% to predict generic toxicity. 
 					This model can be used to fine tune the radiation therapy plan as an addition objective in the planning calculus to reduce risk of toxicity prior to treatment and also to preemptively prescribe medication to counter toxicity to try to offset symptoms after treatment.
 				</p>
-				<!-- <br>
+				<br>
 				<p class="lead">
-				</p> -->
+					For another application, the success rate for long-term pain relief can be predicted immediately after neuroablation treatment for pain management. 
+					Typically, success of neuroablation treatment is based on long-term pain relief measured by patient reported outcomes after a long monitoring period lasting months to years. 
+					Treatment success for long-term pain relief right after neuroablation can be predicted from a weighted ensemble model of random forests, boosted trees, K-nearest neighbors and neural networks. 
+					The open source AutoML library, <a href="https://auto.gluon.ai/"> AutoGluon</a>, was used to train this ensemble model with recursive feature elimination and cross validations to predict treatment success for long term pain relief. 
+					Based on predictions, clinicians can decide right after procedure whether treatment performed is a success or additional treatment is required without waiting for months for patient response.
+				</p>
+				<br>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<h5 class="text-center">Identifying features of importances with RFE</h5>
+						<img class="home-illu" src="images/RFE-CV.png" alt="RFE-CV">
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h5 class="text-center">Performances of various ensemble models</h5>
+						<img class="home-illu" src="images/AUC-AutoGluon.png" alt="AUC-AutoGluon">
+					</div>
+				</div>
 			</div>
 
 			<div class="row mt-6">
