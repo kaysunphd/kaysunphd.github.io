@@ -43,12 +43,21 @@
 					Data science applied to healthcare can have substantial impact on patient outcome. 
 					Data analytics performed on historical healthcare data can identify high risk patients, offer personalized outcome predictions to aid in clinical decision-making during therapy enrollment and long-term follow-ups, select more optimum treatments and customize its parameters for best patient outcome, and more.
 					Personalizing medicine by demographics, comoborities, severity and a multitude of other factors is finally achievable with advances in data science methodologies and digitalization of healthcare data. 
+					Previously siloed structured and unstructured healthcare data, including medical records, doctor notes, medical images, omics data, device data, patient reported outcomes(pain scores, side effects, etc.), are slowly becoming more available. 
 				</p>
-
 				<br>
 				<p class="lead">
-					Previously siloed structured and unstructured healthcare data, including medical records, doctor notes, medical images, omics data, device data, patient reported outcomes(pain scores, side effects, etc.), are slowly becoming more available. 
-					Common data science modeling approaches, e.g. support vector machine, decision tree, random forest, Naive Bayes, neural networks, etc., can now be applied on the available healthcare data depending on the desired prediction outcome.
+					Machine learning model training follows the splitting of the data into training and test set. The former is used for training of the model and hyperparameter tuning using cross-validation.
+					The latter is used to test the performance of the optimizied model on unseen data to avoid overfitting.
+				</p>
+				<br>
+				<p class="lead labelbold text-center">
+					Machine Learning Model Training and Hyperparameter Tuning
+				</p>
+				<br>
+				<img class="home-illu more-bottom-pad" src="images/model-training.png" alt="ML-train">
+				<p class="lead">
+					Common data science models, e.g. support vector machine, decision tree, random forest, Naive Bayes, neural networks, etc., can be applied on the available healthcare data depending on the desired prediction outcome.
 				</p>
 				<br>
 				<img class="home-illu" src="images/ML-DS-approaches.png" alt="ml-ds-approaches">
@@ -59,6 +68,7 @@
 			</div>
 
 			<div class="row">
+				
 				<p class="lead">
 					For one application, the risk of patient experienced toxicity after radiation therapy (RT) to treat cancer can be predicted from the delivered radiation dose to the surrounding organs of the tumor. 
 					The 3D dose distribution to each organ is represented by the dose-volume histogram (DVH) calculated from DICOM RT Dose and RT Structure acquired during therapy. 
@@ -66,14 +76,6 @@
 					This model can be used to fine tune the radiation therapy plan as an addition objective in the planning calculus to reduce risk of toxicity prior to treatment and also to preemptively prescribe medication to counter toxicity to try to offset symptoms after treatment.
 				</p>
 				<br>
-
-				<p class="lead labelbold text-center">
-					Machine Learning Training and Hyperparameter Tuning
-				</p>
-				<br>
-				<div class="row">
-					<img class="home-illu more-bottom-pad" src="images/model-training.png" alt="ML-train">
-				</div>
 
 				<p class="lead">
 					For another application, the success rate for long-term pain relief can be predicted immediately after neuroablation treatment for pain management. 
