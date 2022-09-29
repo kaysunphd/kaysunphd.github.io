@@ -295,12 +295,20 @@ body {
     padding-bottom: 24px;
 }
 
+.more-bottom-pad {
+    padding-bottom: 72px;
+}
+
 .no-bottom-pad {
     padding-bottom: 0px;
 }
 
 .top-pad {
     padding-top: 68px;
+}
+
+.less-top-pad {
+    padding-top: 30px;
 }
 
 .hero-link {
