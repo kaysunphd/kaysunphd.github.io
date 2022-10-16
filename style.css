@@ -160,6 +160,13 @@ body {
     font-size: 20px;
  }
 
+ .lead-align {
+    margin-bottom: 0;
+    margin-top: 36px;
+    color: #3a585f;
+    font-size: 20px;
+ }
+
 .labelbold {
     margin-bottom: 0;
     margin-top: 0;
