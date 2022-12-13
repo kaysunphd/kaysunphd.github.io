@@ -250,6 +250,10 @@ body {
     color: #FF0000;
 }
 
+.green-text {
+    color: #157711;
+}
+
 .row {
     margin-left: -15px;
     margin-right: -15px;

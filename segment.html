@@ -40,14 +40,21 @@
 			</div>
 			<div class="row">
 				<p class="lead">
-					Segmented liver organs from computed tomography (CT) scans are critical for radiation therapy planning, image-guided surgery, hepatic disease diagnois and functionality assessment. Manual delineation of the liver from hundreds of CT slices per scan is labor and time consuming. Traditional computer vision and image processing methods are not robust given the variations in image quality of CT (spatial resolutions, signal-to-noise ratio) and human anatomy, and can take a significant amount of time (in minutes) and sometimes require user interactive to provide additional input.
+					Segmentation of organs and tumors from medical images, like computed tomography (CT) and magnetic resonance (MR) imaging, are critical for radiation therapy planning, image-guided surgery, disease diagnois and functionality assessment. 
+					Manual delineation of organs and tumors from hundreds of CT and MR slices per scan is labor and time consuming. 
+					Traditional computer vision and image processing methods are not robust given the variations in image quality (spatial resolutions, signal-to-noise ratio) and human anatomy, and can take a significant amount of time (in minutes) and sometimes require user interactive to provide additional input.
 				</p>
 
 				<br>
 				<p class="lead">
-					A deep learning model taught to learn from the variations in CT image quality and human anatomy by training on a large dataset size. The segmentation predictions are also fully automated, fast (in seconds) and require no user intervention.
+					A deep learning model taught to learn from the variations in medical image quality and human anatomy by training on a large dataset size. 
+					The segmentation predictions are also fully automated, fast (in seconds) and require no user intervention.
 				</p>
-
+				<br>
+				<p class="lead labelbold text-center">
+					3D U-Net Architecture
+				</p>
+				<img class="home-illu" src="images/3D-Unet.png" alt="3D-Unet">
 			</div>
 
 			<div class="row mt-6">
@@ -55,23 +62,19 @@
 			</div>
 
 			<div class="row">
+				<p class="lead labelbold text-center">
+					Segmented liver organ from abdominal CT predicted using deep learning
+				</p>
+				<br>
 				<p class="lead">
 					A 3D U-Net based deep learning model was developed and trained with segmented liver organs from CTs from the <a href="https://competitions.codalab.org/competitions/17094" target="_blank"> Liver Tumor Segmentation Challenge (LiTS) </a>.
-					A different and unseen dataset from <a href="https://www.ircad.fr/research/data-sets/liver-segmentation-3d-ircadb-01/" target="_blank"> 3Dircadb </a> was used for independent validation. High dice and Hausdorff 95 scores were observed for the predicted liver segmentations.
+					A different and unseen dataset from <a href="https://www.ircad.fr/research/data-sets/liver-segmentation-3d-ircadb-01/" target="_blank"> 3Dircadb </a> was used for independent validation. 
+					High dice and Hausdorff 95 scores were observed for the predicted liver segmentations.
 				</p>
 				<br>
 			</div>
 
-			<p class="lead labelbold text-center">
-				3D U-Net Architecture
-			</p>
-			<img class="home-illu more-bottom-pad" src="images/3D-Unet.png" alt="3D-Unet">
-
 			<div class="row">
-				<p class="lead labelbold text-center">
-					Segmented liver organ from abdominal CT scan predicted using deep learning
-				</p>
-				<br>
 				<div class="row">
 					<div class="col-xs-12 col-sm-6">
 						<img class="home-illu" src="images/liver_segment.gif" alt="liver-segment">
@@ -82,7 +85,63 @@
 						<img class="home-illu" src="images/dice_liver_segment.png" alt="dice-score-liver-segment">
 					</div>
 				</div>
+				<br>
 			</div>
+
+			<div class="row">
+				<p class="lead labelbold text-center">
+					Segmented brain tumor from MR predicted using deep learning
+				</p>
+				<br>
+				<p class="lead">
+					A similar 3D U-Net architecture was also applied towards multiclass segmentation of brain tumor from MRIs provided by the <a href="https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=37224922" target="_blank"> Multimodal Brain Tumor Segmentation Challenge 2018 (BraTS) </a>.
+					High dice and Hausdorff 95 scores were observed for the predicted brain tumor segmentations.
+				</p>
+				<br>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<img class="home-illu" src="images/t1_ce.gif" alt="brain-segment-T1_CE">
+					<h5 class="text-center">T1_CE</h5>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<img class="home-illu" src="images/t1.gif" alt="brain-segment-T1">
+					<h5 class="text-center">T1</h5>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<img class="home-illu" src="images/flair.gif" alt="brain-segment-flair">
+					<h5 class="text-center">Flair</h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<img class="home-illu" src="images/t2.gif" alt="brain-segment-T2">
+					<h5 class="text-center">T2</h5>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<img class="home-illu" src="images/prediction.gif" alt="brain-segment-predict">
+					<h5 class="text-center red-text">Tumor core predictions</h5>
+					<h5 class="text-center blue-text">Enhancing tumor predictions</h5>
+					<h5 class="text-center green-text">Edema predictions</h5>
+				</div>
+			</div>
+
+			<div class="row mt-6">
+				<h1 class="text-left">Publications</h1>
+			</div>
+			<div class="row">
+				<p class="lead">
+					<a href="https://link.springer.com/chapter/10.1007/978-3-030-11726-9_39" target="_blank"> 
+						Gering, D., Sun, K., Avery, A., et al. 
+						"Semi-automatic Brain Tumor Segmentation by Drawing Long Axes on Multi-plane Reformat." 
+						In: Crimi, A., Bakas, S., Kuijf, H., Keyvan, F., Reyes, M., van Walsum, T. (eds) 
+						Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries. 
+						BrainLes 2018. Lecture Notes in Computer Science, vol 11384. Springer, Cham.
+					</a>
+				</p>
+			</div>
+			
 
 			<div class="row mt-6">
 				<p class="lead text-center">
