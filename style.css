@@ -407,6 +407,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background: #f5df72;
 }
 
+.iot-shade {
+    min-height: 0;
+    border: 1px solid #f1f1f1;
+    background: #f1f1f1;
+}
+
 .contact-shade {
     min-height: 0;
     border: 1px solid #C8EBFF;
