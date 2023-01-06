@@ -51,16 +51,15 @@
 					The latter is used to test the performance of the optimizied model on unseen data to avoid overfitting.
 				</p>
 				<br>
-				<p class="lead labelbold text-center">
-					Machine Learning Model Training and Hyperparameter Tuning
-				</p>
+				<img class="home-illu" src="images/model-training.png" alt="ML-train">
+				<p class="labelthin text-center"> Machine learning model training and hyperparameter tuning </p>
 				<br>
-				<img class="home-illu more-bottom-pad" src="images/model-training.png" alt="ML-train">
 				<p class="lead">
 					Common data science models, e.g. support vector machine, decision tree, random forest, Naive Bayes, neural networks, etc., can be applied on the available healthcare data depending on the desired prediction outcome.
 				</p>
 				<br>
 				<img class="home-illu" src="images/ML-DS-approaches.png" alt="ml-ds-approaches">
+				<p class="labelthin text-center"> Supervised learning machine learning models </p>
 			</div>
 
 			<div class="row mt-6">
@@ -68,15 +67,23 @@
 			</div>
 
 			<div class="row">
-				
+				<p class="lead labelbold text-center">
+					Patient toxicity outcome prediction after radiation therapy
+				</p>
+				<br>
 				<p class="lead">
 					For one application, the risk of patient experienced toxicity after radiation therapy (RT) to treat cancer can be predicted from the delivered radiation dose to the surrounding organs of the tumor. 
 					The 3D dose distribution to each organ is represented by the dose-volume histogram (DVH) calculated from DICOM RT Dose and RT Structure acquired during therapy. 
 					An open source machine learning library <a href="https://scikit-learn.org/stable/" target="_blank"> scikit-learn</a> was used to train the DVH RT data on a SVM model with recursive feature elimination and cross validation to produce a model of accuracy 79% to predict generic toxicity. 
 					This model can be used to fine tune the radiation therapy plan as an addition objective in the planning calculus to reduce risk of toxicity prior to treatment and also to preemptively prescribe medication to counter toxicity to try to offset symptoms after treatment.
 				</p>
+				<img class="home-illu" src="images/predict_patient_toxicity.png" alt="toxicity_outcome">
+				<p class="labelthin text-center"> Use of patient toxicity outcome predictions to guide radiation therapy planning</p>
 				<br>
-
+				<p class="lead labelbold text-center">
+					Patient pain relief outcome prediction after neuroablation
+				</p>
+				<br>
 				<p class="lead">
 					For another application, the success rate for long-term pain relief can be predicted immediately after neuroablation treatment for pain management. 
 					Typically, success of neuroablation treatment is based on long-term pain relief measured by patient reported outcomes after a long monitoring period lasting months to years. 
@@ -87,12 +94,12 @@
 				<br>
 				<div class="row">
 					<div class="col-xs-12 col-sm-6">
-						<h5 class="text-center">Identifying features of importances with RFE</h5>
 						<img class="home-illu" src="images/RFE-CV.png" alt="RFE-CV">
+						<p class="labelthin text-center">Identifying features of importances with RFE</p>
 					</div>
 					<div class="col-xs-12 col-sm-6">
-						<h5 class="text-center">Performances of various ensemble models</h5>
 						<img class="home-illu" src="images/AUC-AutoGluon.png" alt="AUC-AutoGluon">
+						<p class="labelthin text-center">Performances of various ensemble models</p>
 					</div>
 				</div>
 			</div>
