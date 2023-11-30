@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>	
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--link rel="icon" type="image/png" href="images/logo_favicon-16x16.png"-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Lato|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>mlops</title>
+</head>
+<body>
+	<header class="site-header mlops-shade">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_small.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="site-header-nav">
+				<a class="site-header-nav-item" href="index.html#what-we-created">Solutions</a>
+				<a class="site-header-nav-item" href="news.html">News</a>
+				<a class="site-header-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="jumbotron-apps mlops-shade text-center">
+		<div class="container">
+			<img class="home-illu" src="images/heading_mlops_transparent.png" alt="MLOps">
+		</div>
+	</div>
+
+	<section class="page-section page-section-spacious">
+		<div class="container-narrow">
+			<div class="row mt-6">
+				<h1 class="text-left">Motivation</h1>
+			</div>
+			<div class="row">
+				<p class="lead">
+					Machine learning process generally involves ideation to come up with a business problem, what data is needed to solve this problem, how to get this source data and what processing steps are needed for the data before it can go into model training. 
+					Typically, there’s a couple of candidate models to evaluate and compare based on various metrics like accuracy, F1 score, AUC and such. 
+					There’s also an often omitted step of explaining what the model is doing, why its making these predictions in order to build trust in the model. 
+					Depending on the models’ performance, there maybe a need to reassess the data being collected, maybe a now realized critical piece is missing, or reassess the data processing steps to improve upon the model’s performance.
+					Once a production model is decided upon, it will be integrated into the application workflow and deployed to make inferences on real-world data. 
+					Since real-world data and data used during model training may start to drift and deviate over time, model performance may begin to decrease which require constant monitoring to detect and observability to solve.
+					These are the essential steps in machine learning.
+				</p>
+				<br>
+
+				<p class="lead">
+					Despite the benefits and value of AI, only 53% of AI projects progress into production according to a <a href="https://www.gartner.com/en/newsroom/press-releases/2020-10-19-gartner-identifies-the-top-strategic-technology-trends-for-2021" target="_blank"> Gartner survey </a>. 
+					There are many reasons for such a low percentage, including
+					<ul class="lead">
+						<li>The AI solution is not the right one for the problem – that goes back to the business problem and applicability of AI. Not all problems can be solved with AI.</li>
+						<li>There’s lack of trust in the model. Explainable AI is a big factor now especially with biases in models that often never came up during model development.</li>
+						<li>Real world data is too different which is especially true in healthcare. That’s why monitoring and observability is so important.</li>
+						<li>From the <a href="https://www.gartner.com/en/newsroom/press-releases/2020-10-19-gartner-identifies-the-top-strategic-technology-trends-for-2021" target="_blank"> Gartner survey </a> of CTOs and CEOs, the main reason is the lack of tools to create and management production-grade AI pipeline, too much labor intensive manual steps.</li>
+					</ul>
+				</p>
+
+				<br>
+				<img class="home-illu" src="images/ML_process.png" alt="ML_process">
+				<p class="labelthin text-center"> Only a slim majority of AI projects progress into production mostly due to lack of tools to create standardize and repeatable processes for scalable ML operationalization
+				</p>
+			</div>
+
+			<div class="row mt-6">
+				<h1 class="text-left">Solution</h1>
+			</div>
+
+			<div class="row">
+				<p class="lead">
+					There are indeed many solutions available to help out on each of the many steps in MLOps. 
+					<ul class="lead">
+						<li>Code repositories for code versioning like GitHub and BitBucket.</li>
+						<li>CI/CD automation tools with GitHub and Bambo.</li>
+						<li>Automated model training with AWS SageMaker, Azure ML and even inhouse ML code running in the cloud.</li>
+						<li>Model monitoring with the same cloud ML tools, AWS SageMaker and Azure ML, and also Mlflow.</li>
+						<li>Model deployment tools with SageMaker and Azure or inhouse with Docker and Kubernetes.</li>
+						<li>Feature stores from AWS and even cloud databases to store offline and online features, model registries from AWS and Azure, along with the models metadata like all the algorithms, hyperparameters, and such.</li>
+						<li>Workflow orchestrated and automated with Apache Airflow, and Pipelines.</li>
+					
+					Despite the availability of many solutions, there is still the need to know how to configure and connect these components.
+				</p>
+
+				<img class="home-illu" src="images/component_MLOps.png" alt="component_MLOps">
+				<p class="labelthin text-center"> Component of MLOps </p>
+				<br>
+
+				<p class="lead">
+					Building with these components results in end-to-end MLOps.
+					<ol type="1">
+						<li>Starting with the ML project initiation by framing the business problem and determining the data requirements.</li>
+						<li>Data is ingested from source data and extracted to get the pieces of data needed, data transformation and feature engineering to get the data into the needed form for storage into the feature store for offline model training.</li>
+						<li>Features are used in ML training, after data exploration and data preparation by splitting, kfolds and normalization like standard scaling or minmax.
+							Evaluate the different models and try to explain each model for transparency and build trust.</li>
+						<li>Once a model is ready for deployment, the finalized development steps can be automated and the production model stored in the mode registry and hyperparameters in the metastore.</li>
+						<li>All the data engineering code, ML training code and automated ML pipeline code gets versioned in the repo and automatically built and deployed with CI/CD like Bamboo or GitHub.</li>
+						<li>Once any model is deployed, it needs to be monitored to see if the ML models’ performance degrade over time and becomes unreliable.</li>
+							<ol type="a">
+								<li>Monitor functional performance in terms of data drifts and also operational performance in terms of infrastructure health e.g. I/O disk, memory/disk/CPU/GPU utilization, network/inference latency, failed requests.
+									However, monitoring can only detect the problem.</li>
+								<li>Need observability to solve the problem by understanding the state of ML system by looking at historical outputs like metrics, traces, logs, data (features and targets).</li>
+						</ol>
+					</ol>
+
+				</p>
+				<br>
+
+				<img class="home-illu" src="images/end_to_end_MLOps.png" alt="end_to_end_MLOps">
+				<p class="labelthin text-center"> End-to-end MLOps </p>
+			</div>
+
+			<div class="row mt-6">
+				<p class="lead text-center">
+					<a href="contact.html">Contact us</a>
+					for more information.
+				</p>
+			</div>
+
+		</div>
+	</section>
+
+	<div class="jumbotron-apps mlops-shade text-center">
+		<div class="container">
+			<div class="row">
+				<!--
+				<img class="home-illu" src="images/rivus_summary_transparent.png" alt="Rivus-Summary">
+				-->
+			</div>
+		</div>
+	</div>
+
+	<foot class="footer">
+		<div class="container">
+			<a class="no-underline-hover" href="index.html">
+				<img class="site-header-icon" src="images/logo_smaller.png" alt="Kay Sun logo">	
+			</a>
+			<nav class="footer-nav">
+				<a class="footer-nav-item" href="index.html#what-we-created">Solutions</a>
+				<a class="footer-nav-item" href="news.html">News</a>
+				<a class="footer-nav-item" href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</foot>
+
+</body>
+
+</html>

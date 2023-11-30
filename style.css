@@ -413,6 +413,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background: #f1f1f1;
 }
 
+.mlops-shade {
+    min-height: 0;
+    border: 1px solid #FDEADA;
+    background: #FDEADA;
+}
+
 .contact-shade {
     min-height: 0;
     border: 1px solid #C8EBFF;
