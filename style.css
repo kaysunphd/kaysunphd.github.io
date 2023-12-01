@@ -160,6 +160,20 @@ body {
     font-size: 20px;
  }
 
+ .subsublead {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #3a585f;
+    font-size: 16px;
+ }
+
+ .sublead {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #3a585f;
+    font-size: 18px;
+ }
+
  .lead-align {
     margin-bottom: 0;
     margin-top: 36px;
