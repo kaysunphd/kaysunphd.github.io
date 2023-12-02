@@ -285,6 +285,13 @@ body {
  	padding-right: 0px;
  }
 
+ .img-illu {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 99%;
+}
+
 .img-doing {
  	max-width: 40%;
  	padding-left: 0px;
