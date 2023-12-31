@@ -285,6 +285,13 @@ body {
  	padding-right: 0px;
  }
 
+ .home-illu-double {
+    max-width: 88%;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
  .img-illu {
     display: block;
     margin: 0 auto;
