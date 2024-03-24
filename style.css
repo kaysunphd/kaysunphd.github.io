@@ -458,6 +458,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background: #fafafa;
 }
 
+.operations-shade {
+    min-height: 0;
+    border: 1px solid #fafafa;
+    background: #c1cbd5;
+}
+
 .deidentify-shade {
     min-height: 0;
     border: 1px solid #1F2F13;
