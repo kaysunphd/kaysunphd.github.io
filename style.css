@@ -446,6 +446,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background: #FDEADA;
 }
 
+.data_platform-shade {
+    min-height: 0;
+    border: 1px solid #E9E6D7;
+    background: #E9E6D7;
+}
+
 .contact-shade {
     min-height: 0;
     border: 1px solid #C8EBFF;
