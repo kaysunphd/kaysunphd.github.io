@@ -466,8 +466,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .operations-shade {
     min-height: 0;
-    border: 1px solid #fafafa;
+    border: 1px solid #c1cbd5;
     background: #c1cbd5;
+}
+
+.compliance-shade {
+    min-height: 0;
+    border: 1px solid #6B633D;
+    background: #6B633D;
 }
 
 .deidentify-shade {
